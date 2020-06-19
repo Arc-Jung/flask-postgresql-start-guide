@@ -15,7 +15,7 @@ alias pip=pip3
 python3 -m venv ./venv
 source /home/ubuntu/environment/venv/bin/activate
 ```
-## Make Python3 virtual environment
+## Clone project in Github
 
 ```bash
 git clone https://github.com/WooSung-Jung/flask-postgresql-start-guide.git
