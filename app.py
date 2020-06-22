@@ -5,12 +5,12 @@ import psycopg2
 from psycopg2.extras import RealDictCursor
 
 app = Flask(__name__, template_folder="templates", static_folder='static')
-@app.route('/')
+@app.route('/') # here is route
 @app.route('/check')
 def view_event_all():
 #################################################################################################################
 # Insert your thnking
-# Lambda & flask
+# Flask
 
 
     conn = psycopg2.connect(host='<000.000.000.000>', 
@@ -25,5 +25,5 @@ def view_event_all():
 
 
 #################################################################################################################
-    print(res)
-    return str(res)
+    print(res) # View in your bash shell
+    return str(res) # View in your browser
