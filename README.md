@@ -32,6 +32,7 @@ export FLASK_DEBUG="True"
 export FLASK_ENV=development
 flask run --host=0.0.0.0
 ```
+
 ## 생성한 플라스크 API를 로컬호스트로 확인하기 / Connect Flask API in localhost
 ```bash
 - Create new bash shell in your OS

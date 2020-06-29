@@ -12,17 +12,15 @@ def view_event_all():
 # Insert your thnking
 # Flask
 
-
     conn = psycopg2.connect(host='<000.000.000.000>', 
-                                            user='<postgres>', 
+                                            user='<postgres or username>', 
                                             password='<PASSWORD>', 
                                             port='<5432 or tour port>', 
                                             dbname='<postgres or your dbname>')
     psql_cursor=conn.cursor(cursor_factory=RealDictCursor)
-    sql = "SELECT * FROM event;"
+    sql = "SELECT * FROM <Your Table>;"
     psql_cursor.execute(sql) # Excute query
     res = psql_cursor.fetchall() # Save result
-
 
 #################################################################################################################
     print(res) # View in your bash shell
