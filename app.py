@@ -15,13 +15,12 @@ def view_event_all():
     conn = psycopg2.connect(host='<000.000.000.000>', 
                                             user='<postgres or username>', 
                                             password='<PASSWORD>', 
-                                            port='<5432 or tour port>', 
+                                            port='<5432 or your port>', 
                                             dbname='<postgres or your dbname>')
     psql_cursor=conn.cursor(cursor_factory=RealDictCursor)
     sql = "SELECT * FROM <Your Table>;"
     psql_cursor.execute(sql) # Excute query
     res = psql_cursor.fetchall() # Save result
 
-#################################################################################################################
     print(res) # View in your bash shell
     return str(res) # View in your browser
