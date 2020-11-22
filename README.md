@@ -12,7 +12,7 @@ python --version
 alias python=python3
 alias pip=pip3
 python3 -m venv ./venv
-source /home/ubuntu/environment/venv/bin/activate
+source ./venv/bin/activate
 ```
 ## 깃허브 프로젝트 클론하기 / Clone project in Github
 
@@ -36,7 +36,7 @@ flask run --host=0.0.0.0
 ## 생성한 플라스크 API를 로컬호스트로 확인하기 / Connect Flask API in localhost
 - Create new bash shell in your OS
 - Insert command at below
-- confirm previous bash shell with new bash shell together
+- Confirm previous bash shell with new bash shell together
 
 ```bash
 curl http://0.0.0.0:5000/check
