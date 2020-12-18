@@ -1,5 +1,5 @@
 # flask-postgresql-start-guide
-
+[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FWooSung-Jung%2Fflask-postgresql-start-guide&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)
 ### ***Fisrt uploaded 2020-06-19 WooSung-Jung***
 
 ## 파이썬3로 가상환경 생성 / Make Python3 virtual environment
