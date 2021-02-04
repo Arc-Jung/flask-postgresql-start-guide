@@ -9,14 +9,13 @@ app = Flask(__name__, template_folder="templates", static_folder='static')
 @app.route('/check')
 def view_event_all():
 #################################################################################################################
-# Insert your thnking
-# Flask
+# Insert your world in Flask
 
-    conn = psycopg2.connect(host='<000.000.000.000>', 
-                                            user='<postgres or username>', 
-                                            password='<PASSWORD>', 
-                                            port='<5432 or your port>', 
-                                            dbname='<postgres or your dbname>')
+    conn = psycopg2.connect(host='<000.000.000.000>', # IP or DNS
+                            user='<postgres or username>', # user name
+                            password='<PASSWORD>', # Database password
+                            port='<5432 or your port>', # PostgreSQL default setting is '5432'
+                            dbname='<postgres or your dbname>') # PostgreSQL database name
     psql_cursor=conn.cursor(cursor_factory=RealDictCursor)
     sql = "SELECT * FROM <Your Table>;"
     psql_cursor.execute(sql) # Excute query
