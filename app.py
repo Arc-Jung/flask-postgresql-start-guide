@@ -17,7 +17,7 @@ def view_event_all():
                             port='<5432 or your port>', # PostgreSQL default setting is '5432'
                             dbname='<postgres or your dbname>') # PostgreSQL database name
     psql_cursor=conn.cursor(cursor_factory=RealDictCursor)
-    sql = "SELECT * FROM <Your Table>;"
+    sql = "SELECT * FROM <Your Table>;" # Change your table name in PostgreSQL database
     psql_cursor.execute(sql) # Excute query
     res = psql_cursor.fetchall() # Save result
 
