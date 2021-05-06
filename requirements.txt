@@ -8,4 +8,4 @@ psycopg2==2.8.5
 pytz==2020.1
 Werkzeug==1.0.1
 zope.interface==5.1.0
-flask-cors==3.0.8
+flask-cors==3.0.9
